@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: arial;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: black;
+  color: white;
+}
+
+.container {
+  margin: 20px;
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+.container h2 {
+  border-bottom: 2px solid white;
+  width: 50px;
+}
+
+.products {
+  background: white;
+  padding: 30px;
+  margin: 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  color: black;
+}
+
+.card img {
+  height: 250px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.card h1 {
+  margin: 10px 0px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+  margin: 10px 0px;
+}
+
+.card p {
+  margin: 10px 0px;
+  font-weight: bold;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.stock {
+  padding: 5px;
+  color: red;
+}
+
+.quantity {
+  display: none;
+}
+
+.quantity input {
+  width: 50px;
+  margin-bottom: 10px;
+  paddign: 5px;
+}
+
+.cartStyle {
+  color: black;
+  padding: 10px;
+  border-bottom: 2px solid gray;
+}
+
+.productCart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.cart {
+  padding-top: 5px;
+}
+
+.cartValue {
+  background: white;
+  color: black;
+  border: 2px solid #333;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px 1px white;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.btnDelete {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btnDelete:hover {
+  background: black;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .products {
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
