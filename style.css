@@ -17,16 +17,26 @@ header {
   color: white;
 }
 
+.menu h5 {
+  margin-top: 10px;
+}
+
+.menu h5 a,
+.menu h2 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
 .container {
   margin: 20px;
   background: black;
   color: white;
   padding: 20px;
-}
-
-.container h2 {
-  border-bottom: 2px solid white;
-  width: 50px;
 }
 
 .products {
@@ -138,6 +148,48 @@ header {
 .btnDelete:hover {
   background: black;
   color: white;
+}
+
+.info {
+  margin: 10px;
+}
+
+.info a {
+  text-decoration: none;
+  color: green;
+}
+
+.container_body p {
+  margin: 20px 100px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.socialMedia {
+  background-color: white;
+  margin: 30px 450px;
+  padding: 30px;
+}
+
+.socialMedia p {
+  color: black;
+}
+
+.icons {
+  margin: 10px;
+}
+
+.icons a {
+  margin: 10px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: black;
+}
+
+.wish {
+  margin-top: 8px;
 }
 
 @media screen and (max-width: 768px) {
